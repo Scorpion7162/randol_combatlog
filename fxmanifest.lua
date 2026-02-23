@@ -1,7 +1,13 @@
-fx_version 'bodacious'
+fx_version 'cerulean'
 game 'gta5'
-
 author 'Randolio'
+description 'Resource to visualise players who have left the server'
+version '2.0.0'
+
+
+files {
+    'locales/*.json'
+}
 
 shared_scripts {
     '@ox_lib/init.lua',
@@ -19,4 +25,3 @@ client_scripts {
     'cl_dropped.lua',
 }
 
-lua54 'yes'
