@@ -7,7 +7,13 @@ function GetPlayer(id)
 end
 
 function DoNotification(src, text, nType)
-    exports.qbx_core:Notify(src, text, nType)
+    lib.notify(src, {
+        title = 'Combat Log',
+        description = text,
+        type = nType,
+        position = 'top',
+        duration = 5000,
+    })
 end
 
 function GetCharacterName(Player)
